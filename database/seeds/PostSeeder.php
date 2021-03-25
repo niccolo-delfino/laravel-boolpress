@@ -20,6 +20,9 @@ class PostSeeder extends Seeder
         $newPost->content = $faker->text(500);
         // $newPost->slug = $slug = Str::slug($newPost->title);
 
+        // $userCount = Count(User::all()->toArray());
+        // $newPost->user_id = rand(1, $userCount);
+
         $slug = Str::slug($newPost->title);
         $slugIniziale = $slug;
         $postPresente = Post::where('slug', $slug)->first();
