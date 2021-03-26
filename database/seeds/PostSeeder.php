@@ -18,6 +18,7 @@ class PostSeeder extends Seeder
         $newPost = new Post();
         $newPost->title = $faker->sentence;
         $newPost->content = $faker->text(500);
+        $newPost->user_id = 1;
         // $newPost->slug = $slug = Str::slug($newPost->title);
 
         // $userCount = Count(User::all()->toArray());

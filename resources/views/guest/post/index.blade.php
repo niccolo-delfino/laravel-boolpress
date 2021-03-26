@@ -12,6 +12,7 @@
   </div>
   <div class="card-body">
     <p class="card-text">{{$post->content}}</p>
+    <p>{{ $post->user->name}}</p>
     <a href="{{ route('guest.posts.show', $post->slug)}}" class="btn btn-primary">Dettagli</a>
   </div>
 </div>
