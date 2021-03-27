@@ -2,7 +2,7 @@
 @section('content')
 
   <div>
-    <button type="button" class="btn btn-primary" href="{{route('post.create')}}">Crea un nuovo post</button>
+    <a class="btn btn-primary" href="{{route('post.create')}}">Crea un nuovo post</a>
   </div>
 
   <table class="table table-hover">
