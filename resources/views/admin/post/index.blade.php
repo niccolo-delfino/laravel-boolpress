@@ -16,7 +16,7 @@
         <tr>
           <th scope="col">ID</th>
           <th scope="col">Title</th>
-          <th scope="col">User Id</th>
+          <th scope="col">Created By</th>
           <th scope="col">Created at</th>
           <th scope="col">updated at</th>
         </tr>
@@ -27,7 +27,7 @@
           <tr>
             <td>{{$post->id}}</td>
             <td>{{$post->title}}</td>
-            <td>{{$post->user_id}}</td>
+            <td>{{$post->user->name}}</td>
             <td>{{$post->created_at}}</td>
             <td>{{$post->updated_at}}</td>
             <td><a class="btn btn-primary" href="{{route('post.show', $post->id)}}">View</a></td>
