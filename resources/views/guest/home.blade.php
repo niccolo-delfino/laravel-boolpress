@@ -67,6 +67,9 @@
         <div class="flex-center position-ref full-height">
             @if (Route::has('login'))
                 <div class="top-right links">
+                  <a class="navbar-brand" href="{{ route('guest.contatti') }}">
+                      Contatti
+                  </a>
                     @auth
                         <a href="{{ url('/admin') }}">Admin</a>
                     @else

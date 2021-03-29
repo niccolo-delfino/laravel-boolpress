@@ -81,7 +81,7 @@
               <a class="nav-link active" href="{{route('index')}}">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="{{route('post.store')}}">Posts</a>
+              <a class="nav-link" href="{{route('guest.posts.index')}}">Posts</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Users</a>
