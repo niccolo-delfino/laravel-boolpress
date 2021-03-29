@@ -7,6 +7,8 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Str;
 use App\Post;
+use App\Tag;
+use Illuminate\Support\Facades\Storage;
 
 class PostController extends Controller
 {
