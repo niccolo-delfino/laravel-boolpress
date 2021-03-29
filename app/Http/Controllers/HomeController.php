@@ -33,6 +33,11 @@ class HomeController extends Controller
         $newLead ->fill($data);
         $newLead ->save();
 
-        return redirect()->route('guest.contatti');
+        return redirect()->route('guest.contatti.inviato');
+    }
+
+    public function contattiInviato()
+    {
+        return view('guest.inviato');
     }
 }
