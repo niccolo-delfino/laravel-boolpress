@@ -8,6 +8,7 @@
         <th scope="col">Title</th>
         <th scope="col">Created By</th>
         <th scope="col">Body</th>
+        <th scope="col">Image</th>
         <th scope="col">Created at</th>
         <th scope="col">updated at</th>
       </tr>
@@ -18,6 +19,7 @@
         <td>{{$post->title}}</td>
         <td>{{$post->user->name}}</td>
         <td>{{$post->content}}</td>
+        <td><img src="{{asset('storage/'.$post->cover)}}" alt="{{$post->title}}"></td>
         <td>{{$post->created_at}}</td>
         <td>{{$post->updated_at}}</td>
       </tr>
